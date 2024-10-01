@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors'); // Import the cors package
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Use CORS middleware
+
 app.use(cors({
-    origin: 'https://map-application-frontend.vercel.app', // Replace with your frontend URL
+    origin: 'https://map-application-frontend.vercel.app',
 }));
 
 app.get('/route', (req, res) => {
